@@ -48,9 +48,9 @@ def point_double(P, a, p):
 
 
 # Example curve: y² ≡ x³ + ax + b mod p
-a = 2
-b = 3
-p = 97  # A small prime
+a = 1
+b = 1
+p = 23  # A small prime
 
 # 1. Find all points on the curve
 points = find_points(a, b, p)
