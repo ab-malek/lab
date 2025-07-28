@@ -2,10 +2,10 @@
 
 using namespace std;
 
-const int a = 2;
-const int b = 3;
-const int p = 97;  // prime modulus
-const pair<int, int> G = {3, 6};  // base point
+const int a = 1;
+const int b = 2;
+const int p = 13;  // prime modulus
+const pair<int, int> G = {7, 1};  // base point
 
 // Modular inverse using Extended Euclidean Algorithm
 int inverse_mod(int a,int b, int &x, int &y){
@@ -92,12 +92,12 @@ int main() {
     cout << "== ECDH Key Exchange ==\n";
 
     // Alice's key
-    int alice_private = 7;
+    int alice_private = 6;
     auto [privA, pubA] = generate_keypair(alice_private);
     print_point("Alice's Public Key", pubA);
 
     // Bob's key
-    int bob_private = 11;
+    int bob_private = 9;
     auto [privB, pubB] = generate_keypair(bob_private);
     print_point("Bob's Public Key", pubB);
 
